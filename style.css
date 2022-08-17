@@ -1,6 +1,9 @@
 body {
   font-family: 'Raleway', sans-serif;;
   margin: 0;
+  width: 98%;
+  max-width: 1440px;
+  margin: auto;
 }
 
 a {
@@ -8,23 +11,11 @@ a {
   color: initial;
 }
 
-header {
-  width: 98%;
-  max-width: 1440px;
-  margin: auto;
-}
-
-body {
-  width: 98%;
-  max-width: 1440px;
-  margin: auto;
-}
-
 .navbar {
   display: grid;
   justify-content: center;
   align-items: center;
-  grid-template-columns: 1fr 5fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 8fr 1fr 1fr;
   grid-template-rows: 1fr;
   grid-template-areas: "logo . accomodation activities";
 }
@@ -92,7 +83,7 @@ body {
 }
 
 .title-h1 {
-  font-size: 32px;
+  font-size: 24px;
   margin: 10px 0;
 }
 
@@ -127,4 +118,85 @@ body {
 
 .info p {
   display: inline;
+}
+
+.icon-location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55px;
+  height: auto;
+  background-color: #F2F2F2;
+  border-radius: 14px 0 0 14px;
+}
+
+.fa-map-marker-alt {
+  font-size: 20px;
+}
+
+.button-research {
+  border: none;
+  border-radius: 0 14px 14px 0;
+  background-color: #0065fc;
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 17px;
+  cursor: pointer;
+}
+
+.button-research:hover {
+  background-color: #003c96;
+  transition: ease 0.3s;
+}
+
+
+.filters h3 {
+  font-size: 24px;
+  display: inline;
+}
+
+.filters ul {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.filters ul li {
+  display: inline;
+  margin-left: 25px;
+  font-weight: 700;
+  border: solid 2px #e2e2e2;
+  padding: 0 20px 0 0;
+  margin-top: 10px;
+  border-radius: 200px;
+}
+
+.filters ul li:hover {
+  cursor: pointer;
+  background: #DEEBFF;
+  transition-duration: 0.25s;
+}
+
+.filters ul li:hover .icon-filter {
+  background: white;
+  transition-duration: 0.25s;
+}
+
+.icon-filter {
+  background-color: #DEEBFF;
+  color: #0065fc;
+  padding: 18px;
+  border-radius: 200px;
+  margin-right: 15px;
+}
+
+.info .fas {
+  color: #0065fc;
+  font-size: 16px;
+  padding: 7px 11px 7px 11px;
+  border: solid 1px #D9D9D9;
+  border-radius: 2000px;
+  margin-right: 20px;
 }
