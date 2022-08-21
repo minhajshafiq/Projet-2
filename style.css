@@ -1,5 +1,7 @@
+/** Haut de la page */
+
 body {
-  font-family: 'Raleway', sans-serif;;
+  font-family: "Raleway", "Sans serif";
   margin: 0;
   width: 98%;
   max-width: 1440px;
@@ -10,6 +12,8 @@ a {
   text-decoration: none;
   color: initial;
 }
+
+/** Logo + Barre de navigation  **/
 
 .navbar {
   display: grid;
@@ -82,7 +86,7 @@ a {
   color: #0065fc;
 }
 
-.title-h1 {
+.headerTitle {
   font-size: 24px;
   margin: 10px 0;
 }
@@ -134,6 +138,19 @@ a {
   font-size: 20px;
 }
 
+.searchForm {
+  border-right: none;
+  border-left: none;
+  border-top: #F2F2F2 1px solid;
+  border-bottom: #F2F2F2 1px solid;
+  padding: 0 1.5rem;
+  box-sizing: border-box;
+  width: 14rem;
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: "Raleway", "Sans serif";
+}
+
 .button-research {
   border: none;
   border-radius: 0 14px 14px 0;
@@ -150,6 +167,7 @@ a {
   transition: ease 0.3s;
 }
 
+/** Partie filtres + Icone et bouton **/
 
 .filters h3 {
   font-size: 24px;
@@ -167,7 +185,7 @@ a {
   display: inline;
   margin-left: 25px;
   font-weight: 700;
-  border: solid 2px #e2e2e2;
+  border: solid 2px #b1b1b1;
   padding: 0 20px 0 0;
   margin-top: 10px;
   border-radius: 200px;
@@ -175,12 +193,7 @@ a {
 
 .filters ul li:hover {
   cursor: pointer;
-  background: #DEEBFF;
-  transition-duration: 0.25s;
-}
-
-.filters ul li:hover .icon-filter {
-  background: white;
+  background: #c7ddff;
   transition-duration: 0.25s;
 }
 
@@ -199,4 +212,137 @@ a {
   border: solid 1px #D9D9D9;
   border-radius: 2000px;
   margin-right: 20px;
+}
+
+/** Section avec les hébergements et les plus populaires **/
+
+.hosting {
+  display: grid;
+  column-gap: 2rem;
+  grid-template-columns: 6fr 3fr;
+  margin: 40px 0 60px 0;
+}
+
+.hostingMain {
+  background-color: #F2F2F2;
+  border-radius: 1.5rem;
+  padding: 2rem;
+}
+
+.hostingPopular {
+  background-color: #F2F2F2;
+  border-radius: 1.5rem;
+  padding: 2rem;
+}
+
+.hostingMainCardGradeIcon {
+  color: #0065fc;
+}
+
+.hostingMainCardGradeIconEmpty {
+  color: #D9D9D9;
+}
+
+/** Hébergements à Marseille **/
+
+.hostingMainCards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 27px;
+  padding: 0 0 0 0;
+}
+
+.hostingMainCard:hover {
+  transform: scale(1.10)
+}
+
+.hostingMainCard {
+  background-color: white;
+  padding: 0.375rem;
+  border-radius: 1.25rem;
+  box-shadow: 0 0 16px #0000002e;
+  transition-duration: 0.1s;
+  cursor: pointer;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+}
+
+.hostingMainCardImg {
+  width: 100%;
+  height: 8rem;
+  max-height: 100%;
+  background-size: 100% 100%;
+  border-radius: 20px 20px 0 0;
+  object-fit: cover;
+}
+
+.hostingPrice {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.hostingMainCardTitle {
+  margin: auto;
+}
+
+.hostingHeaderTitle {
+  margin-top:0px;
+}
+
+.hostingMainViewmore {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+/** Les plus populaires **/
+
+.hostingPopular {
+  display: grid;
+  row-gap: 2rem;
+  align-items: start;
+  grid-template-rows: auto repeat(3, 1fr);
+}
+
+.hostingPopularWrapcontent {
+  display:flex;
+}
+
+.hostingPopularTitle {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 0px;
+}
+
+.hostingPopularCard {
+  display: flex;
+  margin: 0;
+  background-color: white;
+  border-radius: 20px;
+  padding: 7px 0 7px 7px;
+  box-shadow: 0px 0px 6px 0px #0000002e;
+}
+
+.hostingPopularimgImg {
+  width: 100%;
+  height: 100%;
+  max-height: 110px;
+  min-width: 170px;
+  border-radius: 20px 0 0 15px;
+  object-fit: cover;
+}
+
+.hostingPopularContent {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hostingPopularCardTitle {
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
