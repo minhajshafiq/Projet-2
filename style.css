@@ -2,6 +2,16 @@
 
 body {
   font-family: "Raleway", "Sans serif";
+}
+
+header {
+  margin: 0;
+  width: 98%;
+  max-width: 1440px;
+  margin: auto;
+}
+
+main {
   margin: 0;
   width: 98%;
   max-width: 1440px;
@@ -49,7 +59,6 @@ a {
 .navbar #navbar-link-activities:hover > .underline-effect {
   background: #0065fc;
 }
-
 
 .navbar a {
   color: black;
@@ -167,6 +176,10 @@ a {
   transition: ease 0.3s;
 }
 
+.info {
+  margin-top:15px;
+}
+
 /** Partie filtres + Icone et bouton **/
 
 .filters h3 {
@@ -268,6 +281,10 @@ a {
   width: 100%;
 }
 
+.hostingcontent {
+  margin-left:15px;
+}
+
 .hostingMainCardImg {
   width: 100%;
   height: 8rem;
@@ -293,8 +310,9 @@ a {
 .hostingMainViewmore {
   display: block;
   width: 100%;
-  margin-top: 20px;
+  margin-top: 50px;
   font-weight: bold;
+  font-size: 20px;
 }
 
 /** Les plus populaires **/
@@ -327,22 +345,196 @@ a {
 }
 
 .hostingPopularimgImg {
-  width: 100%;
-  height: 100%;
-  max-height: 110px;
-  min-width: 170px;
+  width: 140px;
+  height: 140px;
   border-radius: 20px 0 0 15px;
   object-fit: cover;
 }
 
 .hostingPopularContent {
-  margin-left: 10px;
+  margin-left: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
 .hostingPopularCardTitle {
-  margin-top: 5px;
+  margin-top: 15px;
   margin-bottom: 5px;
 }
+
+.hostingPopularCard:hover {
+  transform: scale(1.10)
+}
+
+.PopularStars {
+  margin-bottom:10px;
+}
+
+/** Activités à Marseille **/
+
+.activity {
+  display: grid;
+  column-gap: 2rem;
+  margin: 4rem 0;
+}
+
+.activityTitle {
+  grid-column: 1 / -1;
+}
+
+.activity {
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto 14rem 2rem 2rem 2rem 14rem;
+}
+
+.activityCard1 {
+  grid-row: 2/7;
+  grid-column: 1/2;
+}
+.activityCard2 {
+  grid-column: 2/3;
+  grid-row: 2/5;
+}
+.activityCard3 {
+  grid-column: 3/4;
+  grid-row: 2/7;
+}
+.activityCard4 {
+  grid-column: 4/5;
+  grid-row: 2/3;
+}
+.activityCard5 {
+  grid-column: 2/3;
+  grid-row: 6/7;
+}
+.activityCard6 {
+  grid-column: 4/5;
+  grid-row: 4/7;
+}
+
+.activityCard {
+  box-shadow: 0 0 20px #0000002e;
+  border-radius: 1rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition-duration: 0.1s;
+}
+
+.activityCard:hover {
+  transform: scale(1.10);
+}
+
+.activityCardimg {
+  position: relative;
+  flex: 1;
+}
+
+.activityCardimgImg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.activityCardTitle {
+  margin: 1.2rem 1.5rem;
+}
+
+/** Footer **/
+
+.footer {
+  width: 100%;
+  background: #F2F2F2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footerColumnColumnTitle {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.footerColumn {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1440px;
+}
+
+.footerColumnColumn {
+  width: 40%;
+  padding: 1rem 2rem;
+}
+
+.footerColumnColumnLink {
+  display: block;
+  margin: 0.5rem 0;
+}
+.footerColumnColumnLink:hover {
+  text-decoration: underline;
+}
+
+
+/** Media Queries **/
+
+@media screen and (max-width: 650px) {
+  .navbar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "logo navbar-link"
+    "navbar-link-accomodation navbar-link-activities";
+  }
+
+  .navbar img {
+    grid-area: logo;
+  }
+  .navbar #navbar-link-accomodation {
+    flex-direction: column-reverse;
+    grid-area: navbar-link-accomodation;
+  }
+  .navbar #navbar-link-activities {
+    flex-direction: column-reverse;
+    grid-area: navbar-link-activities;
+  }
+  .navbar #navbar-link-activities .underline-effect {
+    background-color: #dbdbdb;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+  .activity {  
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "activityCard1"
+    "activityCard2"
+    "activityCard3"
+    "activityCard4"
+    "activityCard5"
+    "activityCard6";
+}
+  
+.activityTitle {
+  grid-column: 1 / -1;
+}
+
+
+}
+
