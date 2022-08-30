@@ -107,6 +107,10 @@ a {
   margin-bottom: 35px;
 }
 
+.research-box .searchFormSubmitinputIcon {
+  display:none;
+}
+
 .filters h3 {
   font-size: 24px;
   display: inline;
@@ -361,6 +365,7 @@ a {
 .hostingPopularCardTitle {
   margin-top: 15px;
   margin-bottom: 5px;
+  font-weight: bold;
 }
 
 .hostingPopularCard:hover {
@@ -478,9 +483,21 @@ a {
 }
 
 
-/** Media Queries **/
+/** Media Queries Mobile **/
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 768px) {
+  header {
+    width: 100%;
+    max-width: 1440px;
+    margin: auto;
+  }
+  
+  main {
+    width: 100%;
+    max-width: 1440px;
+    margin: auto;
+  }
+
   .navbar {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -505,36 +522,85 @@ a {
     background-color: #dbdbdb;
   }
 
+  .search {
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 
+  .button-research {
+    display:none;
+  }
 
+  .research-box .searchFormSubmitinputIcon {
+    display:block;
+    border-radius: 15px;
+  }
 
+  .filtersTitle {
+    margin-left: 30px;
+  }
 
+  .info {
+    display: flex;
+    align-items: center;
+  }
 
+  .textResult {
+    margin: 0px;
+  }
 
+  .hosting {
+    display:flex;
+    flex-direction: column-reverse;
+    row-gap: 40px;
+  }
 
+  .hostingPopular {
+    padding-left: 15px;
+    padding-right: 15px;
+    row-gap: 1rem;
+    border-radius: 0%;
+  }
 
+  .hostingPopularTitle {
+    margin-bottom: 20px;
+  }
 
+  .hostingMain {
+    background-color: white;
+    padding-left:15px;
+    padding-right:15px;
+    padding-bottom: 0px;
+  }
 
+  .hostingMainCards {
+    display:flex;
+    flex-direction:column;
+    grid-gap: 15px;
+  }
 
-  .activity {  
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "activityCard1"
-    "activityCard2"
-    "activityCard3"
-    "activityCard4"
-    "activityCard5"
-    "activityCard6";
+  .hostingcontent {
+    margin-top: 8px;
+  }
+
+    .activity {  
+      margin: 15px;
+      margin-bottom: 40px;
+      display:flex;
+      flex-direction: column;
+      row-gap: 40px;
+  }
+
+  .activityTitle {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .footerColumn {
+    flex-direction: column;
+  }
+
 }
-  
-.activityTitle {
-  grid-column: 1 / -1;
-}
 
-
-}
-
+/** Media Queries Tablet **/
