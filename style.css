@@ -52,7 +52,7 @@ a {
   background: white;
 }
 
-.navbar #navbar-link-accomodation > .underline-effect {
+.navbar #navbar-link-accomodation:hover > .underline-effect {
   background: #0065fc;
 }
 
@@ -66,19 +66,16 @@ a {
   padding: 25px;
 }
 
-.navbar a:visited {
-  color: #0065fc;
-}
-
 .navbar img {
   grid-area: logo;
 }
 
 .navbar #navbar-link-accomodation {
   grid-area: accomodation;
+  color: black;
 }
 
-#navbar-link-accomodation a {
+.navbar #navbar-link-accomodation a:hover {
   color: #0065fc;
 }
 
@@ -314,7 +311,8 @@ a {
 .hostingMainViewmore {
   display: block;
   width: 100%;
-  margin-top: 50px;
+  margin-top: 40px;
+  margin-left: 10px;
   font-weight: bold;
   font-size: 20px;
 }
@@ -470,7 +468,7 @@ a {
 }
 
 .footerColumnColumn {
-  width: 40%;
+  width: auto;
   padding: 1rem 2rem;
 }
 
@@ -498,6 +496,12 @@ a {
     margin: auto;
   }
 
+  .logo {
+    width: 50%;
+    height: 50%;
+    margin-left: 170px;
+  }
+
   .navbar {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -518,8 +522,21 @@ a {
     flex-direction: column-reverse;
     grid-area: navbar-link-activities;
   }
-  .navbar #navbar-link-activities .underline-effect {
-    background-color: #dbdbdb;
+
+  .headerText {
+    margin: 15px;
+  }
+
+  .research-box {
+    margin: 15px;
+  }
+
+  .filters {
+    margin-top: 20px;
+  }
+
+  .info {
+    margin-left: 15px;
   }
 
   .search {
@@ -582,23 +599,38 @@ a {
 
   .hostingcontent {
     margin-top: 8px;
+    margin-bottom: 8px;
   }
 
-    .activity {  
-      margin: 15px;
-      margin-bottom: 40px;
-      display:flex;
-      flex-direction: column;
-      row-gap: 40px;
+  .hostingMainViewmore {
+    margin-top: 30px;
   }
 
-  .activityTitle {
+  .activity {  
+    margin: 15px;
+    margin-bottom: 40px;
+    display:flex;
+    flex-direction: column;
+    row-gap: 40px;
+  }
+
+  .activityCardimgImg {
+    position: relative;
+    width: 100%;
+    height:auto;
+  }
+
+  .linkivityTitle {
     margin-top: 0px;
     margin-bottom: 0px;
   }
 
   .footerColumn {
     flex-direction: column;
+  }
+
+  .footerColumnColumn {
+    padding-top: 10px;
   }
 
 }
