@@ -581,7 +581,8 @@ a {
   }
 
   .hostingPopularTitle {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+    margin-top: 10px;
   }
 
   .hostingMain {
@@ -604,6 +605,7 @@ a {
 
   .hostingMainViewmore {
     margin-top: 30px;
+    font-size: 22px;
   }
 
   .activity {  
@@ -617,7 +619,7 @@ a {
   .activityCardimgImg {
     position: relative;
     width: 100%;
-    height:auto;
+    max-height: 150px;
   }
 
   .linkivityTitle {
