@@ -1,56 +1,43 @@
-# Booki - OpenClassrooms
+# Booki – React + Vite + TypeScript + Tailwind
 
-## 📚 Description du projet
-Booki est un projet de développement front-end réalisé dans le cadre d'une formation OpenClassrooms. L'objectif est d'intégrer une maquette en HTML et CSS pour un site de réservation d'hébergements et d'activités touristiques.
+Refonte du projet Booki (maquette OpenClassrooms) avec une stack moderne : React 19, Vite, TypeScript et Tailwind. L’application affiche des hébergements et activités filtrables, avec une interface responsive et localisée (FR/EN).
 
-> Stack modernisée : React 19 + Vite + TypeScript + Tailwind (les styles historiques sont conservés pour l'instant).
+## 🚀 Prérequis
+- Node.js ≥ 18
+- npm (fourni avec Node)
 
-## 📅 Objectifs pédagogiques
-- Intégrer une interface responsive en HTML et CSS
-- Respecter une maquette fournie
-- Utiliser Flexbox et Grid pour la mise en page
-- Assurer l'accessibilité et la compatibilité multi-navigateurs
-
-## 👥 Auteurs
-Projet réalisé par **Minhaj** dans le cadre de la formation OpenClassrooms.
-
-## 🌐 Démo
-Vous pouvez consulter la version en ligne du projet ici : [Lien vers la démo](#)
-
-## ⚙️ Technologies utilisées
-- **HTML5** : Structure du site
-- **CSS3** : Mise en page avec Flexbox et Grid
-
-## 🛠 Installation (nouvelle stack)
+## 🛠 Installation & commandes
 ```bash
 npm install
-npm run dev       # serveur de dev
-npm run lint      # lint TS/React
-npm run typecheck # vérification TypeScript
-npm run build     # build de production
+npm run dev        # serveur de dev (http://localhost:5173)
+npm run lint       # ESLint
+npm run typecheck  # vérification TypeScript
+npm run build      # build de production
+npm run preview    # prévisualisation du build
 ```
 
-## 📅 Fonctionnalités
-- Affichage des hébergements et activités disponibles
-- Interface responsive
-- Design fidèle à la maquette
+## 📂 Structure rapide
+- `src/main.tsx` : point d’entrée Vite/React
+- `src/App.tsx` : composition des sections
+- `src/features/` : sections (search, hosting, activities, layout)
+- `src/components/ui/` : composants UI réutilisables
+- `src/app/i18n/` : clés et traductions FR/EN
+- `public/` : assets statiques
 
-## 📝 Cahier des charges
-- Utiliser uniquement HTML et CSS (sans frameworks)
-- Respecter la maquette fournie
-- Assurer un design responsive
+## ✨ Fonctionnalités
+- Recherche et filtres (éco, familial, romantique, animaux)
+- Liste des hébergements et des populaires avec modale détail
+- Activités mises en avant
+- Responsive (flex/grid + Tailwind)
+- Localisation FR/EN via dictionnaire simple
 
-## 🏆 Améliorations possibles
-- Ajouter un carrousel d’images pour chaque hébergement
-- Intégrer une carte interactive avec les localisations
-- Ajouter un système de filtres dynamiques en JavaScript
+## 🌐 Démo
+Démo locale : `npm run dev`.  
+Lien hébergé : à compléter.
 
-## ✨ Aperçu du projet
-![Aperçu Booki]([https://via.placeholder.com/800x400](https://minhajshafiq.github.io/Projet-2/))
-
-## 🛢 Support
-Si vous avez des questions ou suggestions, n'hésitez pas à ouvrir une issue ou me contacter.
+## 🛠 Support
+Questions ou suggestions : ouvrir une issue ou me contacter.
 
 ---
-💌 **Licence** : Ce projet est sous licence MIT.
+Licence MIT.
 
