@@ -3,6 +3,8 @@
 ## 📚 Description du projet
 Booki est un projet de développement front-end réalisé dans le cadre d'une formation OpenClassrooms. L'objectif est d'intégrer une maquette en HTML et CSS pour un site de réservation d'hébergements et d'activités touristiques.
 
+> Stack modernisée : React 19 + Vite + TypeScript + Tailwind (les styles historiques sont conservés pour l'instant).
+
 ## 📅 Objectifs pédagogiques
 - Intégrer une interface responsive en HTML et CSS
 - Respecter une maquette fournie
@@ -19,13 +21,14 @@ Vous pouvez consulter la version en ligne du projet ici : [Lien vers la démo](#
 - **HTML5** : Structure du site
 - **CSS3** : Mise en page avec Flexbox et Grid
 
-## 🛠 Installation
-### 1. Cloner le dépôt
+## 🛠 Installation (nouvelle stack)
 ```bash
-git clone https://github.com/minhajshafiq/booki.git
+npm install
+npm run dev       # serveur de dev
+npm run lint      # lint TS/React
+npm run typecheck # vérification TypeScript
+npm run build     # build de production
 ```
-### 2. Ouvrir le projet
-Ouvrez le fichier `index.html` dans un navigateur.
 
 ## 📅 Fonctionnalités
 - Affichage des hébergements et activités disponibles
